@@ -568,3 +568,23 @@ html {
     -webkit-mask-image: radial-gradient(200px at var(--x) var(--y), transparent 95%, black 100%);
     mask-image: radial-gradient(200px at var(--x) var(--y), transparent 95%, black 100%);
 }
+
+.placeholder-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Adjust this to fit the container size */
+    text-align: center;
+    background-color: #f0f0f0;
+    /* Light gray background for the placeholder */
+    color: #333;
+    /* Dark text color */
+    padding: 20px;
+}
+
+.placeholder-text {
+    font-size: 1.5em;
+    /* Adjust the font size as needed */
+    font-family: 'Libre Baskerville', serif;
+}

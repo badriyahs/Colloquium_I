@@ -1,0 +1,23 @@
+/* css/styles.css */
+
+.node rect {
+    fill: steelblue;
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+.node text {
+    font: 12px sans-serif;
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: 0.2;
+}
+
+.link:hover {
+    stroke-opacity: 0.5;
+}

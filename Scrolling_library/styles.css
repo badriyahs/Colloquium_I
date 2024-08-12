@@ -544,7 +544,7 @@ html {
 }
 
 #myContainer.hole {
-    background-image: url(Scrolling_library/Body/In.png);
+    background-image: url(./Scrolling_library/Body/In.png);
     background-size: cover;
     --x: 200px;
     --y: 150px;
@@ -560,7 +560,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(Scrolling_library/Body/Out.png);
+    background-image: url(./Scrolling_library/Body/Out.png);
     background-size: cover;
     z-index: 1;
     -webkit-mask-repeat: no-repeat no-repeat;

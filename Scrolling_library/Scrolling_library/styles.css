@@ -508,3 +508,37 @@ h1 {
     z-index: 3;
     /* Ensure the canvas layers are appropriately stacked */
 }
+
+
+/* Video Container */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.step {
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    background-color: black;
+    color: white;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+    aspect-ratio: 32/10;
+}

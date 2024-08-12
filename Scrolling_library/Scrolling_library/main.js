@@ -359,3 +359,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.requestAnimationFrame(draw); // Start the animation
 });
+document.addEventListener('DOMContentLoaded', function () {
+    // Existing code...
+
+
+    // Existing code...
+});

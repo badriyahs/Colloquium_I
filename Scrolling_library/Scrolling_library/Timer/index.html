@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Timer</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        #timeDisplay {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="startButton">Start</button>
+    <button id="stopButton" disabled>Stop</button>
+    <div id="timeDisplay" style="display: none;">Time: <span id="time"></span> seconds</div>
+
+    <script>
+        let startTime;
+        let timerInterval;
+
+        document.getElementById('startButton').addEventListener('click', function () {
+            startTime = Date.now();
+            this.disabled = true;
+            document.getElementById('stopButton').disabled = false;
+            document.getElementById('timeDisplay').style.display = 'none';
+            timerInterval = setInterval(function () {
+                const elapsedTime = ((Date.now() - startTime) / 1000).toFixed(1);
+                document.getElementById('time').textContent = elapsedTime;
+            }, 100);
+        });
+
+        document.getElementById('stopButton').addEventListener('click', function () {
+            clearInterval(timerInterval);
+            document.getElementById('startButton').disabled = false;
+            this.disabled = true;
+            document.getElementById('timeDisplay').style.display = 'block';
+        });
+    </script>
+
+</body>
+
+</html>

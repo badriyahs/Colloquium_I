@@ -1,0 +1,14 @@
+{
+  "name": "8feb99f5eb0ed9f3",
+  "main": "8feb99f5eb0ed9f3@276.js",
+  "version": "276.0.0",
+  "homepage": "https://observablehq.com/d/8feb99f5eb0ed9f3",
+  "author": {
+    "name": "badriyah",
+    "url": "https://observablehq.com/@badriyah"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}

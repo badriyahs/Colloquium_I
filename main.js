@@ -361,7 +361,20 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 document.addEventListener('DOMContentLoaded', function () {
     // Existing code...
-
-
-    // Existing code...
 });
+window.onload = function () {
+    const div = document.querySelector('#myContainer.hole');
+    let isIn = false;
+    div.addEventListener('mouseover', function () {
+        isIn = true;
+    });
+    div.addEventListener('mouseout', function () {
+        isIn = false;
+    });
+    div.addEventListener('mousemove', function (event) {
+        if (isIn) {
+            div.style.setProperty('--x', event.clientX + 'px');
+            div.style.setProperty('--y', event.clientY + 'px');
+        }
+    });
+}
